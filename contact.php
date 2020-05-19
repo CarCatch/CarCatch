@@ -14,6 +14,6 @@
      echo "<h1> Sent Successfully! Thank you for your message.";
     }
     else{
-        echp "Something went wrong!";
+        echo "Something went wrong!";
     }
     }
