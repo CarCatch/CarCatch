@@ -11,20 +11,21 @@
 <body>
     <ul class="menubar">
         <li class="left" , style="padding:0px;margin-top:0px;"><a href="index.html"><img src="white.png" style="width:275px;height:68px;"></a></li>
-        <!-- <li class="right" , style="margin-top:10px;font-size:25px;"><a href="login.html">Login</a></li> -->
+        <li class="right" , style="margin-top:10px;font-size:25px;"><a href="login.html">Login</a></li>
         <li class="right" , style="margin-top:10px;font-size:25px;"><a href="contact.html">Contact Us</a></li>
         <li class="right" , style="margin-top:10px;font-size:25px;"><a href="about.html">About</a></li>
+    </ul>
     </ul>
 </body>
 
         <div class="container1", style="margin:30px;">
-            <form action="action_page.php">
+            <form action="contact.php" method="post">
 
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="firstname" placeholder="Your first name...">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Your email...">
 
                 <label for="province">Province</label>
                 <select id="province" name="province">
@@ -42,8 +43,8 @@
                     <option value="territories">Territories</option>
                 </select>
 
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" placeholder="Your message..." style="height:200px"></textarea>
 
                 <input type="submit" value="Submit">
 
